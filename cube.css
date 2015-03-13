@@ -9,6 +9,7 @@ body {
 
 /** STEP STYLES **/
 .step {
+	
 	width: 1000px;
     height: 1000px;
 
@@ -24,4 +25,39 @@ body {
 	-ms-box-sizing:     border-box;
 	-o-box-sizing:      border-box;
 	box-sizing:         border-box;
+}
+
+.frontFace {
+    background-image: url("toast.png");
+    background-size:100%;
+    opacity : 0.90;
+}
+
+.rightFace {
+    background-image: url("cheese.png");
+    background-size:100%;
+    opacity : 0.85;
+}
+
+.backFace {
+    background-image: url("toast.png");
+    background-size:100%;
+    opacity : 0.85;
+}
+.leftFace{
+	background-image: url("cheese.png");
+	background-size:100%;
+	opacity : 0.85;
+}
+
+.topFace{
+	background-image: url("toast.png");
+	background-size:100%;
+	opacity : 0.85;
+}
+
+.bottomFace{
+	background-image: url("cheese.png");
+	background-size:100%;
+	opacity : 0.85;
 }
