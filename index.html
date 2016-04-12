@@ -5,17 +5,22 @@
 
 <head>
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+     
+     <script src="jquery.js"></script>
+     <script src="typed.js"></script>
+     
 
      <title>Andrew's Resume Page</title>
 
      <style type="text/css">
         * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+        body { font: 14px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
         .clear { clear: both; }
         #page-wrap { width: 800px; margin: 40px auto 60px; }
         #pic { float: right; margin: -30px 0 0 0; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 4px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h1 { margin: 0 0 14px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 4px solid #999; }
+        h2 { font-size: 16px; margin: 0 0 6px 0; position: relative; }
         h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
         p { margin: 0 0 16px 0; }
         a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
@@ -27,7 +32,84 @@
         dd { width: 600px; float: right; }
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
-     </style>
+        
+        
+       p.ex1 {
+    margin-bottom: .1cm;
+} 
+        
+        
+.typed-cursor{
+opacity: 1;
+-webkit-animation: blink 0.7s infinite;
+-moz-animation: blink 0.7s infinite;
+animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* text editor styles */
+.text-editor-wrap {
+  display: block;
+  margin: auto;
+  max-width: 530px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
+  clear: both;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+  
+.title-bar {
+  height: 18px;
+  padding: 5px 0;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 0.75em;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
+  background-image: -moz-linear-gradient(top, #e8e8e8, #bcbbbc);
+  background-image: linear-gradient(top, #e8e8e8, #bcbbbc);
+  box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
+  border-bottom: #6a6a6a 1px solid; }
+  
+
+.text-body {
+  height: 125px;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px;
+  color: #f0f0f0;
+  text-shadow: #000 0px 1px 0px;
+  font-family: "Consolas", "Courier New", "Courier";
+  font-size: 1.0em;
+  line-height: 1.40em;
+  font-weight: 500;
+  text-align: left;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+        
+    </style>
 </head>
 
 <body>
@@ -42,7 +124,7 @@
         
             <h1 class="fn">Andrew Guidetti</h1>
         
-            <p>
+            <p class="ex1">
                 Cell: <span class="tel">508-801-2761</span><br />
                 Email: <a class="email" href="mailto:andrew.guidetti@gmail.com">andrew.guidetti@gmail.com</a>
             </p>
@@ -50,7 +132,38 @@
                 
         <div id="objective">
             <p>
-                I'm a technology enthusiate thats passinote about automation and tinkering. I'm a firm beliver that creativty can solve any problem, this is especially true in the world of technology. 
+            
+
+
+
+<script>
+
+
+
+$(function(){
+    $("#story").typed({
+            strings: ["Thanks for checking out my resume page!^1000 <br>$ My name is Andrew.^1000<br>$ Some people call me AJ.^1000",
+            "Listed here are just a few of my skills and experiences.^1000<br>.<br>.<br>and a whole lot of acronyms..^500",
+            "I Just remembered I'll probably need to print this<br>.^1000.^1000.^1000.^1000<br>$ I better finish with something that looks smart.^1000<br>$ clear^100", 
+            " -> I'm a technology enthusiast.<br>$ -> I enjoy working with Linux and automation<br>$ -> I have a wide range of tech and buisness skills.<br>$ -> Creativity is my strongest weapon."],
+            typeSpeed: 0,
+            backSpeed: -50,
+        });
+    });
+</script>
+
+<div class="text-editor-wrap">
+    <div class="title-bar">
+    <span class="title">résumé.sh &mdash; bash &mdash; 500x30</span></div>
+    <div class="text-body">
+$ <span id="story"></span>
+</div>
+</div>
+
+
+
+               <!-- I'm a technology enthusiast thats passinote about automation and tinkering.  I'm a firm beliver that creativty can solve any problem, this is especially true in the world of technology. -->
+        
             </p>
         </div>
         
@@ -59,26 +172,21 @@
         <dl>
             <dd class="clear"></dd>
             
-            <dt>Education</dt>
-            <dd>
-                <h2>University Of Massachusetts - Dartmouth </h2>
-                <p><strong>Major:</strong> Computer Science<br />
-                   <strong>Focus:</strong> Software Engineering, Graphic Design</p>
-            </dd>
-            
-            <dd class="clear"></dd>
+
             
             <dt>Tech Skills</dt>
             <dd>
                 
                 <Li><strong>Linux:</strong> Ansible, Bash, Nagios, RHEL, JBoss, vim</Li>
-                <Li><strong>Microsoft:</strong> Active Direcotry, ASP.NET MVC, Office</Li>
-                <li><strong>Web:</strong> JavaScript, HTML, CSS, nginx, webex</li>
+                <Li><strong>Microsoft:</strong> Active Directory, ASP.NET MVC, Office</Li>
+                <li><strong>Web:</strong> JavaScript, HTML, jquery, CSS, nginx, webex</li>
                 <li><strong>Virtual:</strong> AWS EC2, VMware, VirtualBox</li>
                 <li><strong>Medical:</strong> DICOM, dcm4chee, PACS</li>
-                <li><strong>Design:</strong>Balsamiq Mockups, Adobe CS, UML</li>
+                <li><strong>Design:</strong> Balsamiq Mockups, Adobe CS, UML</li>
                 <li><strong>Data:</strong> Commvault, PostgreSQL, EMC Storage</li>
+                <br>
             </dd>
+            
             
             <dd class="clear"></dd>
             
@@ -115,12 +223,21 @@
             
             <dd class="clear"></dd>
             
+                <dt>Education</dt>
+            <dd>
+                <h2>University Of Massachusetts - Dartmouth </h2>
+                <p><strong>Major:</strong> Computer Science<br />
+                   <strong>Focus:</strong> Software Engineering, Graphic Design</p>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
             
                  <dt>Studies</dt>
             <dd>
                 
-                <Li><strong>RedHat Summit, Boston</strong> System administrator focused sessions - 2012 </Li>
-                <Li><strong>Commvault - Core Fundamentals, Bosto</strong> Data backup and recovery  - 2012  </Li>
+                <strong>RedHat Summit, Boston</strong> System administrator focused sessions - 2012
+                <strong>Commvault - Core Fundamentals, Bosto</strong> Data backup and recovery  - 2012
         
             </dd>
             
