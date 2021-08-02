@@ -2,15 +2,15 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    
+
 
 <head>
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
      <link rel="shortcut icon" href="images/favicon.ico">
-     
+
      <script src="jquery.js"></script>
      <script src="typed.js"></script>
-     
+
 
      <title>Andrew's Resume Page</title>
 
@@ -33,9 +33,9 @@
         dd { width: 600px; float: right; }
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
-        
-        p.ex1 { margin-bottom: .1cm; } 
-        
+
+        p.ex1 { margin-bottom: .1cm; }
+
         .typed-cursor{
         opacity: 1;
         -webkit-animation: blink 0.7s infinite;
@@ -72,7 +72,7 @@
           -ms-transition: all 0.5s ease-out;
           -o-transition: all 0.5s ease-out;
           transition: all 0.5s ease-out; }
-  
+
         .title-bar {
           height: 18px;
           padding: 5px 0;
@@ -86,7 +86,7 @@
           background-image: linear-gradient(top, #e8e8e8, #bcbbbc);
           box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
           border-bottom: #6a6a6a 1px solid; }
-        
+
         .text-body {
           height: 125px;
           background-color: rgba(0, 0, 0, 0.85);
@@ -104,38 +104,38 @@
           -ms-transition: all 0.5s ease-out;
           -o-transition: all 0.5s ease-out;
           transition: all 0.5s ease-out; }
-        
+
     </style>
 </head>
 
 <body>
 
     <div id="page-wrap">
-    
+
         <img src="images/me.png" alt="Photo of Me" id="pic" />
-    
+
         <div id="contact-info" class="vcard">
-        
+
             <!-- Microformats! -->
-        
-            <h1 class="fn">Andrew Guidetti</h1>
-        
+
+            <h1 class="fn">Andrew "AJ" Guidetti</h1>
+
             <p class="ex1">
                 Cell: <span class="tel">617-657-9054</span><br />
                 Email: <a class="email" href="mailto:andrew.guidetti@gmail.com">andrew.guidetti@gmail.com</a>
             </p>
-            
-            
-            
+
+
+
         </div>
-                
+
         <div id="objective">
             <p>
 <script>
 
     $(function(){
         $("#story").typed({
-                strings: ["Thanks for visiting my resume page!^1000 <br>$ My name is Andrew.^1000<br>$ Some people call me AJ.^1000",
+                strings: ["Thanks for visiting my resume page!^1000 <br>$ My name is Andrew.^1000<br>$ Most people call me AJ.^1000",
                 "Listed here are just a few of my skills and experiences.^1000<br>.<br>.<br>and a whole lot of acronyms!^500",
                 " -> I'm a technology enthusiast.<br>$ -> I enjoy working with Linux and automation<br>$ -> I have a wide range of tech and business skills.<br>$ -> Creative and determined problem solver."],
                 typeSpeed: 0,
@@ -143,7 +143,7 @@
             });
         });
 </script>
-    
+
     <div class="text-editor-wrap">
         <div class="title-bar">
         <span class="title">résumé.sh &mdash; bash &mdash; 500x30</span></div>
@@ -154,37 +154,55 @@
 
             </p>
         </div>
-        
-        <div class="clear"></div>       
-        
+
+        <div class="clear"></div>
+
         <dl>
             <dd class="clear"></dd>
-            
 
-            
+
             <dt>Tech Skills</dt>
             <dd>
-                
-                <li><strong>Scripting:</strong> Ansible, Bash, CloudFormation, JavaScript, Python, Terraform</li>
-                <Li><strong>Linux:</strong> Docker, RHEL, CentOS, Vim, Hashicorp Vault & Packer </Li>
-                <li><strong>Virtual:</strong> AWS, Azure, VMware, VirtualBox</li>
-                <li><strong>Monitoring:</strong> Datadog, Splunk, CloudWatch, Nagios</li>
-                <li><strong>Management:</strong> IAM, Github, Slack, Atlassian: Jira & Confluence</li>
-                <li><strong>Web:</strong> HTML, Cloudflare, Route53, TLS & OpenSSL</li>
-                <li><strong>Medical:</strong> DICOM, HIPAA and FISMA compliance</li>
-                <li><strong>Data:</strong> Commvault, SQL, S3, EBS</li>
+
+                <li><strong>Cloud:</strong> AWS, Azure, Cloudflare, GCP, DigitalOcean </li>
+                <li><strong>Scripting:</strong> Ansible, Bash, Cloudformation, Terraform, Python </li>
+                <li><strong>Containers:</strong> Docker, Docker-compose, Kubernetes, Helm </li>
+                <li><strong>Monitoring:</strong> Datadog, Splunk, CloudWatch, Nagios </li>
+                <li><strong>Methodologies:</strong> Scrum, Agile, Kanban, TeamRetro </li>
+                <li><strong>Managment:</strong> Slack, Jira, Confluence, Github/Gitlab </li>
+                <li><strong>Tools:</strong> Vim, Packer, Vault, Jenkins, Commvault, Lucidchart </li>
                 <br>
             </dd>
-            
-            
+
+
             <dd class="clear"></dd>
-            
+
             <dt>Experience</dt>
             <dd>
-                <h2>Harvard Medical School<span>Senior DevOps Engineer - Boston, MA - Jul 2016 - Present</span></h2>
+
+                <h2>Abacus Insights<span>Sr. SRE - Boston, MA - June 2020 - Present</span></h2>
                 <ul>
-                    <li>Senior DevOps Engineer for <a href="http://avillach-lab.hms.harvard.edu/">Avillach Lab</a>, part of the Department of Biomedical Informatics at Harvard Medical School.</li> 
-                    <li>Working primarily with AWS, Docker, Jenkins, and Ansible</li>
+                    <li>Site Reliability Engineer for a highly secure and compliant big-medical-data platform. </li>
+                    <li>Plan and execute customer upgrades and releases. build and maintain internal tooling to orchestrate in place upgrades of 80+ microservices built by multiple dev teams</li>
+                    <li>Debug and improve on terraform code managing a wide variety of AWS resources including EKS, Cloudformation, and Lambda. Integrated 3rd party products like Auth0 and Cloudflare into existing AWS deployments and infrastructure</li>
+                    <li>Matrixed into multiple dev teams, participating in their Sprints to lead efforts focused around deployability, scalability, resiliency, monitoring, and fault tolerance.</li>
+
+                </ul>
+
+                <h2>Ark PES<span>Sr. Cloud Engineer - Boston, MA - Sep 2019 - June 2020</span></h2>
+                <ul>
+                    <li>Lead AWS cloud infrastructure engineer for a small fintech startup.</li>
+                    <li>Deployed and improved on internal tooling like Jenkins, Vault, and Terraform to better manage a mostly EKS based platform.</li>
+                    <li>Took on SecOps and Network design duties to rebuild underlying VPC and security group infrastructure to maintain best practices.</li>
+                </ul>
+
+
+                <h2>Harvard Medical School<span>Sr. DevOps Engineer - Boston, MA - Jul 2016 - Sep 2019 </span></h2>
+                <ul>
+                    <li>Senior DevOps Engineer for <a href="http://avillach-lab.hms.harvard.edu/">Avillach Lab</a>, part of the Department of Biomedical Informatics at Harvard Medical School.</li>
+                    <li>Promoted and championed for Scrum and Agile methodologies despite having a non standard team mix of Doctors, Engineers, and Students.</li>
+                    <li>Worked primarily with AWS, Docker, Jenkins, and Ansible.</li>
+                    <li>Worked heavily with jupyter notebooks for data science. Designed and deployed a resilient jupyter-hub server to concurrently provide compute power to 100+ resource hungry data science students</li>
 
                 </ul>
                 <h2>Berklee<span>System Administrator - Boston, MA - Feb 2015 - Jul 2016</span></h2>
@@ -194,7 +212,7 @@
                     <li>Primary engineer for all Commvault data backup systems. Designed and implemented storage policies and disaster recovery plans. </li>
                     <li>Planned and executed a data center migration.</li>
                 </ul>
-                
+
                 <h2>AG Mednet, Inc.<span>Operation Engineer - Boston, MA - Feb 2014 - Jan 2015</span></h2>
                 <ul>
                     <li>Worked directly with client as SME: building requirements documents, designing, implementing, testing, and deploying a complete clinical trial solution.</li>
@@ -202,61 +220,62 @@
                     <li>Enhanced complex medical documents with JavaScript and Acrobat.</li>
                     <li>Collaborated with developers to improve design and user experience.</li>
                 </ul>
-                
+
                 <h2>AG Mednet, Inc.<span>Support Engineer - Boston, MA - Jan 2012 - Feb 2014</span></h2>
                 <ul>
                     <li>Managed the delivery and secure storage of clinical trial data across 200+ remote Scientific Linux hosts distributed globally.</li>
                     <li>Created custom database management scripts with Bash to simplify data retrieval tasks in PostgreSQL.</li>
                     <li>Fielded support calls in a 24/7 global language help desk. Remote troubleshooting of client/server Java application for medical image delivery. </li>
                 </ul>
-                
+
                 <h2>UMass Technical Services<span>Technician - North Darmtouh, MA - 2008 - 2012</span></h2>
                 <ul>
                     <li>Auditorium and performance space management. Sound system engineering, lighting design. Worked with event planners to coordinate equipment.</li>
-                </ul> 
+                </ul>
             </dd>
-            
-            
+
+
             <dd class="clear"></dd>
-            
+
                 <dt>Education</dt>
             <dd>
                 <h2>University Of Massachusetts - Dartmouth </h2>
                 <p><strong>Major:</strong> Computer Science<br />
-                   <strong>Focus:</strong> Software Engineering, Graphic Design</p>
+                   <strong>Focus:</strong> Software Engineering, Graphic Design<br />
+                   <strong>Graduated 2012</strong></p>
             </dd>
-            
+
             <dd class="clear"></dd>
-            
-            
+
+
                  <dt>Studies</dt>
             <dd>
-                
+
                 <strong>Amazon Web Services, Boston</strong> - Architecting on AWS - 2018<br />
                 <strong>Amazon Web Services, Boston</strong> - Security Engineering on AWS - 2018<br />
                 <strong>RedHat Summit, Boston</strong> - System administrator focused sessions - 2015<br />
                 <strong>Commvault - Core Fundamentals, Boston</strong> - Data backup and recovery  - 2015
-        
+
             </dd>
-            
+
             <dd class="clear"></dd>
-            
-            
-            
-            
+
+
+
+
             <dt>Interests</dt>
             <dd>Game Design, Community management, UX design, Public speaking, Improvisation, Storytelling, Technical theatre, AV presentation, Travel, Minecraft server admin.</dd>
-            
+
             <dd class="clear"></dd>
-            
+
             <dt>References</dt>
             <dd>Available on request</dd>
-            
+
             <dd class="clear"></dd>
         </dl>
-        
+
         <div class="clear"></div>
-    
+
     </div>
 
 </body>
